@@ -2418,26 +2418,38 @@
   "Name": "ovh",
   "ConfigableFields": [
    {
-    "Title": "FieldType",
+    "Title": "APIEndpoint",
     "Datatype": "string"
    },
    {
-    "Title": "SubDomain",
+    "Title": "ApplicationKey",
     "Datatype": "string"
    },
    {
-    "Title": "Target",
+    "Title": "ApplicationSecret",
     "Datatype": "string"
    },
    {
-    "Title": "Zone",
+    "Title": "ConsumerKey",
     "Datatype": "string"
    }
   ],
   "HiddenFields": [
    {
-    "Title": "ID",
-    "Datatype": "int64"
+    "Title": "OAuth2Config",
+    "Datatype": "*OAuth2Config"
+   },
+   {
+    "Title": "PropagationTimeout",
+    "Datatype": "time.Duration"
+   },
+   {
+    "Title": "PollingInterval",
+    "Datatype": "time.Duration"
+   },
+   {
+    "Title": "HTTPClient",
+    "Datatype": "*http.Client"
    }
   ]
  },
